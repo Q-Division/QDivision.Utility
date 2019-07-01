@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>netcoreapp2.0;net45</TargetFrameworks>
     <Authors>Q_Division</Authors>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
     <Description>Tests for the QDivision.Utility library</Description>
     <Copyright>Q_Division 2018</Copyright>
   </PropertyGroup>
