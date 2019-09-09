@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
+		<TargetFrameworks>netstandard2.0;net45;net40</TargetFrameworks>
 		<Authors>Q_Division</Authors>
 		<Description>A collection of utility functionality</Description>
 		<Copyright>Q_Division 2018</Copyright>
-		<Version>0.2.0</Version>
+		<Version>0.2.1</Version>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<IncludeSymbols>true</IncludeSymbols>
 	</PropertyGroup>
