@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.0;net45;net40</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1;net45;net40</TargetFrameworks>
     <Authors>Q_Division</Authors>
-    <Version>0.2.1</Version>
+    <Version>0.2.2</Version>
     <Description>Tests for the QDivision.Utility library</Description>
     <Copyright>Q_Division 2018</Copyright>
   </PropertyGroup>

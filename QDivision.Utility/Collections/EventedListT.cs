@@ -86,8 +86,15 @@ namespace QDivision.Utility.Collections
 
 		public bool Remove(T item)
 		{
-			CollectionChanged?.Invoke(this, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Remove, item));
-			return mList.Remove(item);
+			var removed = mList.Remove(item);
+
+			if (removed)
+			{
+				CollectionChanged?.Invoke(this,
+					new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Remove, item));
+			}
+
+			return removed;
 		}
 
 		public List<T>.Enumerator GetEnumerator()

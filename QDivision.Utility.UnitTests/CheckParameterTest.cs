@@ -26,8 +26,7 @@ namespace QDivision.Utility.UnitTests
 		[Test]
 		public void CheckObjectParameterNullVowel()
 		{
-			var message = "An obj is required"
-			              + Environment.NewLine + "Parameter name: obj";
+			var message = Helper.BuildExceptionMessage("An obj is required", "obj");
 
 			Assert.That(() => CheckParameter.ObjectParameter("obj", null),
 				Throws.ArgumentNullException.With.Message.EqualTo(message));
@@ -39,8 +38,7 @@ namespace QDivision.Utility.UnitTests
 		[Test]
 		public void CheckObjectParameterNullConsonant()
 		{
-			var message = "A someobj is required"
-			              + Environment.NewLine + "Parameter name: someobj";
+			var message = Helper.BuildExceptionMessage("A someobj is required", "someobj");
 
 			Assert.That(() => CheckParameter.ObjectParameter("someobj", null),
 				Throws.ArgumentNullException.With.Message.EqualTo(message));
@@ -65,8 +63,7 @@ namespace QDivision.Utility.UnitTests
 		[Test]
 		public void CheckStringParameterNullVowel()
 		{
-			var message = "An astring is required"
-			              + Environment.NewLine + "Parameter name: astring";
+			var message = Helper.BuildExceptionMessage("An astring is required", "astring");
 
 			Assert.That(() => CheckParameter.StringParameter("astring", null),
 				Throws.ArgumentNullException.With.Message.EqualTo(message));
@@ -78,8 +75,7 @@ namespace QDivision.Utility.UnitTests
 		[Test]
 		public void CheckStringParameterEmptyVowel()
 		{
-			var message = "An astring is required (is empty)"
-			              + Environment.NewLine + "Parameter name: astring";
+			var message = Helper.BuildExceptionMessage("An astring is required (is empty)", "astring");
 
 			Assert.That(() => CheckParameter.StringParameter("astring", ""),
 				Throws.ArgumentException.With.Message.EqualTo(message));
@@ -92,8 +88,7 @@ namespace QDivision.Utility.UnitTests
 		[Test]
 		public void CheckStringParameterNullConsonant()
 		{
-			var message = "A str is required"
-			              + Environment.NewLine + "Parameter name: str";
+			var message = Helper.BuildExceptionMessage("A str is required", "str");
 
 			Assert.That(() => CheckParameter.StringParameter("str", null),
 				Throws.ArgumentNullException.With.Message.EqualTo(message));
@@ -105,8 +100,7 @@ namespace QDivision.Utility.UnitTests
 		[Test]
 		public void CheckStringParameterEmptyConsonant()
 		{
-			var message = "A str is required (is empty)"
-			              + Environment.NewLine + "Parameter name: str";
+			var message = Helper.BuildExceptionMessage("A str is required (is empty)", "str");
 
 			Assert.That(() => CheckParameter.StringParameter("str", ""),
 				Throws.ArgumentException.With.Message.EqualTo(message));
