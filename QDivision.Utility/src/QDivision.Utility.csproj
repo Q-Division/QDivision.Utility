@@ -5,7 +5,7 @@
 		<Authors>Q_Division</Authors>
 		<Description>A collection of utility functionality</Description>
 		<Copyright>Q_Division 2018</Copyright>
-		<Version>0.2.2</Version>
+		<Version>0.2.3</Version>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<IncludeSymbols>true</IncludeSymbols>
 	</PropertyGroup>
